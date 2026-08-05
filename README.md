@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=1000&color=2EA6F7&center=true&vCenter=true&width=650&lines=Hi+%F0%9F%91%8B%2C+I'm+Manoj+Kumar;Global+Enterprise+AI+Transformation+Architect;Founder+%40+DataHulk;Databricks+%7C+Azure+%7C+Lakehouse+%7C+Delta+Lake" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=26&duration=3000&pause=1000&color=2EA6F7&center=true&vCenter=true&width=650&lines=Hi+%F0%9F%91%8B%2C+I'm+Manoj+Kumar; Global+Enterprise+AI+Transformation+Architect;Founder+%40+DataHulk; Databricks+%7C+Azure+%7C+Lakehouse+%7C+Delta+Lake" alt="Typing SVG" />
 
 ### 🚀 Turning enterprise data chaos into governed, real-time intelligence
 
