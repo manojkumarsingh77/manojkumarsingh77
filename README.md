@@ -38,14 +38,17 @@ Next Enterprise   → Autonomous Agents operating safely inside that platform
 
 Real, runnable code — not slideware. Each repo is honest about what's production-grade logic vs. simulated infrastructure, with a clearly marked path to production. Clone them, run them, and see the reasoning for yourself.
 
-| Project | What it demonstrates |
-|---|---|
-| 🤖 **[Multi-Agent Pipeline Orchestrator](https://github.com/manojkumarsingh77/multi-agent-pipeline-orchestrator)** | Supervisor/worker agents that plan, route, and self-retry a data pipeline — the control-loop pattern behind LangGraph/AutoGen |
-| 🔍 **[RAG Agent over Lakehouse Metadata](https://github.com/manojkumarsingh77/rag-agent-lakehouse)** | Grounded, cited natural-language Q&A over a data catalog — no hallucinated table names |
-| 🩹 **[Self-Healing ETL Agent](https://github.com/manojkumarsingh77/self-healing-etl-agent)** | Diagnoses failure root cause and auto-remediates within a *bounded* action space — escalates to a human outside it |
-| 🛡️ **[Autonomous Data Governance Agent](https://github.com/manojkumarsingh77/governance-agent-unity-catalog)** | Continuously audits PII tagging, access control, and retention policy — detect + recommend, not auto-fix |
+| Project | Framework | What it demonstrates |
+|---|---|---|
+| 🎫 **[Support Ticket Triage Agent](https://github.com/manojkumarsingh77/pydantic-ai-support-triage-agent)** | Pydantic AI | Type-safe agent output — every classification, priority, and tool call is a validated Pydantic model, not a parsed string, before it ever touches the Lakehouse |
+| 🕵️ **[Multi-Agent Data Quality Investigator](https://github.com/manojkumarsingh77/google-adk-data-quality-investigator)** | Google ADK | Coordinator + specialist sub-agents (schema/lineage/freshness) investigate a data-quality alert in parallel and synthesize a single root-cause report |
+| 🧩 **[Lakehouse Cost & Query Copilot](https://github.com/manojkumarsingh77/databricks-mosaic-ai-lakehouse-copilot)** | Databricks Mosaic AI | Unity-Catalog-function-shaped tools + an MLflow `pyfunc` agent, packaged the way Mosaic AI Model Serving expects, with a built-in evaluation harness |
+| 🤖 **[Multi-Agent Pipeline Orchestrator](https://github.com/manojkumarsingh77/multi-agent-pipeline-orchestrator)** | LangGraph-style | Supervisor/worker agents that plan, route, and self-retry a data pipeline — the control-loop pattern behind LangGraph/AutoGen |
+| 🔍 **[RAG Agent over Lakehouse Metadata](https://github.com/manojkumarsingh77/rag-agent-lakehouse)** | RAG | Grounded, cited natural-language Q&A over a data catalog — no hallucinated table names |
+| 🩹 **[Self-Healing ETL Agent](https://github.com/manojkumarsingh77/self-healing-etl-agent)** | Custom | Diagnoses failure root cause and auto-remediates within a *bounded* action space — escalates to a human outside it |
+| 🛡️ **[Autonomous Data Governance Agent](https://github.com/manojkumarsingh77/governance-agent-unity-catalog)** | Unity Catalog | Continuously audits PII tagging, access control, and retention policy — detect + recommend, not auto-fix |
 
-> Every POC above is a **personal R&D build**, clearly labeled as such in its README — built to demonstrate architecture patterns, not to represent past client deliverables.
+> Every POC above is a **personal R&D build**, clearly labeled as such in its README — built to demonstrate architecture patterns, not to represent past client deliverables. Each new addition intentionally uses a different agent framework (Pydantic AI, Google ADK, Databricks Mosaic AI) so the underlying orchestration pattern — typed contracts, multi-agent delegation, and Lakehouse-governed tool calling — comes through independent of any one vendor's SDK.
 
 ---
 
@@ -93,6 +96,9 @@ Real, runnable code — not slideware. Each repo is honest about what's producti
 ![PySpark](https://img.shields.io/badge/PySpark-E25A1C?style=for-the-badge&logo=apachespark&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude-AI_Agents-D97757?style=for-the-badge&logo=anthropic&logoColor=white)
 ![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![Pydantic AI](https://img.shields.io/badge/Pydantic_AI-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
+![Google ADK](https://img.shields.io/badge/Google_ADK-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Mosaic AI](https://img.shields.io/badge/Databricks_Mosaic_AI-FF3621?style=for-the-badge&logo=databricks&logoColor=white)
 ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Power BI](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
 
